@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# Ensure the script is run with at least one argument
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <input_file>"
+    exit 1
+fi
+
+# Run the Python script with the provided argument
+python3 totalproc.py "$1"
